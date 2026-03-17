@@ -1,6 +1,6 @@
-# Comprehensive Syllabus: Computer Science Foundations
+# Computer Science Foundations
 
-## 1. Educational Coursework Overview
+## 1. Overview
 This repository serves as a comprehensive academic portfolio covering core tenets of computer science, from low-level system architecture and memory management in C to high-level object-oriented programming, data structures, and advanced algorithms in Java. The coursework systematically progresses through fundamental control flow, intermediate data structures, and culminates in complex system-level projects and web APIs.
 
 ## 2. Featured Projects (Multi-file Folders)

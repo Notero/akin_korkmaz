@@ -1,127 +1,293 @@
-# Computer Science Foundations
+# Computer Science Codebase: Comprehensive Syllabus
 
-## 1. Overview
-This repository serves as a comprehensive academic portfolio covering core tenets of computer science, from low-level system architecture and memory management in C to high-level object-oriented programming, data structures, and advanced algorithms in Java. The coursework systematically progresses through fundamental control flow, intermediate data structures, and culminates in complex system-level projects and web APIs.
+This repository serves as a centralized archive of academic and independent development in Computer Science. It spans from low-level systems programming in C to high-level application architecture and API development in Java, documenting a progression through fundamental computer science pillars.
 
-## 2. Featured Projects (Multi-file Folders)
+## Featured Projects (Multi-File Architectures)
 
-### Custom Terminal (`lang_c/custom_terminal`)
-* **Goal:** Implement process management, inter-process communication (IPC), and custom command parsing for a UNIX-like shell.
-* **Tech Stack:** C, Makefile, Bash (for testing).
-* **Core Logic:** Utilizes a custom parser and system calls (`fork`, `exec`, `pipe`) to handle command execution, piping, and input/output redirection.
+### [C] Custom Terminal and Shell Implementation (/lang_c/custom_terminal)
 
-### Computer Design Project (`lang_c/computer_design_project`)
-* **Goal:** Simulate the core operations and datapath of a processor.
-* **Tech Stack:** C.
-* **Core Logic:** Implements the Arithmetic Logic Unit (ALU) and instruction fetch cycle, simulating low-level hardware execution.
+Educational Core: Operating Systems, Process Management, and Inter-process Communication (IPC).
 
-### Java Spring API - Lab Tracker (`lang_java/java_spring_api`)
-* **Goal:** Develop a web-based RESTful API to track student lab sign-ins and manage records.
-* **Tech Stack:** Java, Spring Boot, Maven, HTML/Thymeleaf, H2 Database.
-* **Core Logic:** Provides REST endpoints and controllers to persist and manage `signedstudent` entities, tracking attendance effectively.
+Logic: A custom shell (mysh) that handles command parsing, process forking via fork(), and program execution using the exec family of system calls. It implements robust I/O redirection (>, <) and piping (|) between processes.
 
-### GUI Web (`lang_java/gui-web`)
-* **Goal:** Demonstrate graphical element rendering and web controller integration.
-* **Tech Stack:** Java.
-* **Core Logic:** Manages UI elements and application states through an element repository and web controller.
+Features: Includes a comprehensive suite of proc-tests to validate edge cases in piping logic and argument handling.
 
-### JUnit Testing (`lang_java/junit_testing`)
-* **Goal:** Apply formal software testing methodologies to an Address Book application.
-* **Tech Stack:** Java, JUnit, Maven.
-* **Core Logic:** Asserts the correctness and robustness of data operations through comprehensive unit test cases.
+Build Tool: Makefile
 
-### Data Structure Implementations (`lang_java/map`, `lang_java/queue_arraylist`, `lang_java/stack`)
-* **Goal:** Create robust, object-oriented implementations of core data structures.
-* **Tech Stack:** Java.
-* **Core Logic:** Demonstrates practical use of Maps (AddressBook), Queues (TicketQueue), and Stacks (RandomStackof8) with custom domain models.
+### [C] Computer Design Project (/lang_c/computer_design_project)
 
-### Threading Simulation (`lang_java/threads`)
-* **Goal:** Explore concurrent programming and thread synchronization.
-* **Tech Stack:** Java.
-* **Core Logic:** Utilizes Java threads to simulate a race condition and execution interleaving between a tortoise and a hare.
+Educational Core: Computer Architecture and MIPS Instruction Set Simulation.
 
-### Unique Pairs (`lang_java/unique_pairs`)
-* **Goal:** Compute and verify unique data pairs against standardized test cases.
-* **Tech Stack:** Java.
-* **Core Logic:** Processes file-based input streams to identify unique pairs and systematically validates results against expected output sets.
+Logic: Implementation of spimcore to simulate the internal components of a processor. This includes the Arithmetic Logic Unit (ALU), instruction fetching cycles, register file management, and memory access control.
 
-## 3. Technical Exercise Index (Individual Files)
+Tech: C programming with strict header file management and modular code separation.
 
-### Fundamentals (Variables, Loops, Conditionals)
-* **`basics_and_variables.c`**: Learn primitive data types and basic variable initialization.
-* **`input_and_arithmetic.c`**: Practice user input parsing and fundamental arithmetic operations.
-* **`functions_and_switch.c`**: Understand function creation and `switch-case` control flow mechanisms.
-* **`loop_patterns_modulo.c`**: Explore iterative constructs and modulo arithmetic.
-* **`nested_conditionals.c`**: Implement complex decision-making trees using nested `if-else` blocks.
-* **`while_loop_counters.c`**: Manage state and counters within `while` loop structures.
-* **`sentinel_loop_logic.c`**: Utilize sentinel values to manage dynamic loop termination.
-* **`input_output_streams.java`**: Handle basic console and file input/output streams in Java.
+### [Java] Spring Boot API and Student Lab Tracker (/lang_java/java_spring_api)
 
-### Data Structures (Tries, BSTs, Linked Lists)
-* **`structs.c`**: Define and instantiate custom composite data types.
-* **`structs_and_arrays.c`**: Combine structures and arrays to manage complex datasets.
-* **`2d_array.c`**: Allocate, manipulate, and traverse two-dimensional array structures.
-* **`list_implementation.c`**: Build and manage dynamic singly or doubly linked lists.
-* **`queue_implementation.c`**: Implement a First-In-First-Out (FIFO) queue data structure in C.
-* **`binary_search_tree.c`**: Implement insertion, deletion, and ordered traversal in a BST.
-* **`Tries.c`**: Construct a prefix tree for highly efficient string searching and retrieval.
+Educational Core: Full-stack architecture, RESTful APIs, and Persistence.
 
-### Advanced Algorithms (Greedy, Backtracking, Dynamic Programming)
-* **`common_search_sort_functions.c`**: Implement foundational searching (e.g., binary search) and sorting (e.g., quicksort/mergesort) algorithms.
-* **`flood_fill.c`**: Apply the flood fill algorithm for multi-directional region traversal.
-* **`shortest_possible_string.c`**: Solve string reduction and optimization challenges.
-* **`substring_extraction.c`**: Extract and manipulate string subsets efficiently.
-* **`backtrack.java`**: Utilize recursive backtracking to traverse combinatorial search spaces.
-* **`greedy_algorithms.java`**: Apply greedy choice properties for local optimization problems.
-* **`dynamic_programming.java` / `dynamic_programming_2.java`**: Solve complex problems by breaking them down into simpler, overlapping subproblems.
-* **`kruskals_algorithm.java`**: Compute the minimum spanning tree of a graph using Kruskal's greedy approach.
-* **`word_frequency_string.java`**: Parse strings to compute occurrence frequencies of individual words.
+Logic: A Model-View-Controller (MVC) application using Spring Boot and an H2 Database. It tracks student lab attendance, managing student profiles and session records.
 
-### Systems Programming (File Systems, Threads, Resource Allocation)
-* **`osystems_file.c`**: Interact with low-level operating system file management APIs.
-* **`file_system_project.c`**: Simulate core file system operations and directory structures.
-* **`joint_dynamic_memory.c`**: Master complex manual dynamic memory allocation (`malloc`, `free`) and pointer arithmetic.
-* **`resource_allocation.c` / `sorted_array_resource_allocation.c`**: Implement strategies for managing and allocating constrained system resources.
-* **`alu_insfetch.c`**: Simulate Arithmetic Logic Unit operations and instruction fetch sequences.
-* **`djauto.c`**: Automate specific system-level tasks and processes.
+Tech: Java, Spring Framework, Maven (pom.xml), Thymeleaf templates for the frontend, and Spring Data JPA for persistence.
 
-### Miscellaneous Applications
-* **`battle_ships_terminal_game.c`**: Apply 2D arrays and game logic to build an interactive terminal game.
-* **`menu_functions.c`**: Create interactive, terminal-based user selection menus.
-* **`math_library_logic.c`**: Utilize standard mathematical libraries for advanced computations.
-* **`strings.c`**: Perform advanced manual string manipulations in C.
-* **`vase_project.c`**: A specialized capstone project applying core C programming concepts.
-* **`reciperion.c` / `reciperion.h`**: Demonstrate modular C programming using header files and separated implementations.
-* **`review.c`**: Synthesize and review multiple core C programming concepts in a single execution flow.
+## Technical Exercise Index: C Language (/lang_c)
 
-## 4. Compilation Guide
+### 1. Data Structures and Advanced Algorithms
 
-### Single-File Execution
-* **C (`.c` files):**
-  Use GCC or Clang to compile into an executable:
-  ```bash
-  clang filename.c -o output_name
-  ./output_name
-  ```
-* **Java (`.java` files):**
-  Use the Java compiler followed by the Java Runtime Environment:
-  ```bash
-  javac filename.java
-  java filename
-  ```
+File
 
-### Multi-File & Managed Projects
-* **Makefiles (`lang_c/custom_terminal`):**
-  Navigate to the specific directory and use `make` to execute the build instructions defined in the `Makefile`:
-  ```bash
-  cd lang_c/custom_terminal
-  make
-  ./mysh
-  ```
-* **Maven Projects (`lang_java/java_spring_api`, `lang_java/junit_testing`):**
-  Navigate to the project root containing the `pom.xml` and use the Maven wrapper (or system `mvn`):
-  ```bash
-  cd lang_java/java_spring_api
-  ./mvnw spring-boot:run
-  ```
-  *(For general compilation and testing: `./mvnw clean install`)*
+Topic
+
+Learning Outcome
+
+binary_search_tree.c
+
+BST
+
+Implementation of insertion, deletion, and search algorithms in a sorted tree structure.
+
+list_implementation.c
+
+Linked Lists
+
+Manual pointer manipulation for creating and traversing dynamic linear data structures.
+
+queue_implementation.c
+
+Queues
+
+Implementing First-In-First-Out (FIFO) logic using both array-based and pointer-based approaches.
+
+Tries.c
+
+Prefix Trees
+
+Specialized tree structure optimized for efficient string retrieval and prefix matching.
+
+flood_fill.c
+
+Graph Algorithms
+
+Implementing Breadth-First Search (BFS) for regional area processing and grid traversal.
+
+shortest_possible_string.c
+
+Greedy/Strings
+
+Solving the Shortest Common Superstring problem via overlap detection and string manipulation.
+
+### 2. Systems Programming and Resource Management
+
+File
+
+Topic
+
+Learning Outcome
+
+joint_dynamic_memory.c
+
+Memory
+
+Deep dive into heap allocation, manual memory management, and pointer arithmetic to prevent leaks.
+
+osystems_file.c
+
+File Systems
+
+Utilizing low-level system calls for file descriptor manipulation and persistent data storage.
+
+resource_allocation.c
+
+Deadlock
+
+Algorithmic simulation of resource requests and implementation of deadlock avoidance strategies.
+
+sorted_array_resource_allocation.c
+
+Resource Mgmt
+
+Managing available system resources efficiently within sorted data constraints.
+
+file_system_project.c
+
+Storage
+
+High-level simulation of file storage, directory structures, and metadata management.
+
+alu_insfetch.c
+
+Hardware Logic
+
+Simulation of the fundamental CPU cycles: Arithmetic Logic Unit operations and Instruction Fetch.
+
+### 3. Application Logic and Utilities
+
+File
+
+Topic
+
+Learning Outcome
+
+battle_ships_terminal_game.c
+
+Game Logic
+
+Complex state management and 2D array manipulation within a CLI environment.
+
+common_search_sort_functions.c
+
+Sorting
+
+Comparative implementation of standard search (Linear/Binary) and sort (Bubble/Quick) algorithms.
+
+math_library_logic.c
+
+Computation
+
+Recreating standard mathematical library functions to understand algorithmic complexity.
+
+word_frequency_string.java
+
+Text Processing
+
+Tokenizing strings to analyze frequency (housed in C directory for cross-language comparison).
+
+reciperion.c / .h
+
+Modularization
+
+Practicing header file separation, interface-based programming, and modular C design.
+
+djauto.c
+
+Automation
+
+Script-like C implementation designed for automated task logic and execution.
+
+vase_project.c
+
+Geometry/Logic
+
+Utilizing programming to solve specific spatial, geometric, or mathematical problems.
+
+### 4. Language Fundamentals and Syntax
+
+Basics: basics_and_variables.c, input_and_arithmetic.c, menu_functions.c, review.c.
+
+Control Flow: nested_conditionals.c, functions_and_switch.c, loop_patterns_modulo.c, while_loop_counters.c, sentinel_loop_logic.c.
+
+Data Handling: 2d_array.c, structs.c, structs_and_arrays.c, strings.c, substring_extraction.c.
+
+## Technical Exercise Index: Java Language (/lang_java)
+
+### 1. Algorithms and Optimization
+
+File
+
+Topic
+
+Learning Outcome
+
+backtrack.java
+
+Recursion
+
+Navigating state-space trees to find solutions via backtracking and pruning.
+
+dynamic_programming.java
+
+DP
+
+Optimizing recursive solutions using memoization to reduce time complexity.
+
+dynamic_programming_2.java
+
+DP
+
+Advanced table-based (bottom-up) optimization strategies for complex problems.
+
+greedy_algorithms.java
+
+Optimization
+
+Implementing locally optimal choices to solve global optimization problems.
+
+kruskals_algorithm.java
+
+Graphs
+
+Finding the Minimum Spanning Tree (MST) using Disjoint Set Union (DSU).
+
+### 2. Object-Oriented Design and Systems
+
+File
+
+Topic
+
+Learning Outcome
+
+threads (Race.java, etc.)
+
+Concurrency
+
+Managing Hare/Tortoise threads and synchronizing shared states to prevent race conditions.
+
+gui-web
+
+UI Architecture
+
+Designing component-based web interfaces and handling user interaction events.
+
+junit_testing
+
+QA/Testing
+
+Writing robust unit tests to ensure code reliability and validate edge-case handling.
+
+input_output_streams.java
+
+I/O
+
+Managing data flow between applications and external files using Java IO/NIO.
+
+### 3. Data Collections and Project Modules
+
+Unique Pairs: unique_pairs.java & test_cases (HashMap-based relationship mapping and student pair counting).
+
+Map/Address Book: AddressBook.java, Address.java, AddressBookController.java (MVC-lite approach to data management).
+
+Stack Logic: Card.java, FacedCard.java, RandomStackof8.java (LIFO data structure applications).
+
+Queue Logic: Person.java, TicketQueue.java (ArrayList-based FIFO queueing simulation).
+
+## Compilation and Usage
+
+### For Individual Files
+
+All code is developed and tested on a 14-inch MacBook Pro (Apple M3 Pro, 18GB Unified Memory).
+
+C Files:
+
+clang -Wall file_name.c -o program
+./program
+
+
+Java Files:
+
+javac FileName.java
+java FileName
+
+
+### For Projects
+
+Makefile Projects: Navigate to the folder and run make.
+
+Maven Projects: Navigate to the folder and run ./mvnw spring-boot:run.
+
+## Environment
+
+Platform: macOS
+
+Hardware: Apple M3 Pro (14-inch MacBook Pro)
+
+Memory: 18GB Unified Memory

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+    <!-- Gray panel container -->
+
+    <!-- Orange divider bar -->
+    <EditText
+        android:id="@+id/initalWalletName"
+        android:layout_width="262dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="Wallet Name Here"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/existingWalletPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/existingWalletPanel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="20dp"
+        android:background="#D0D0D0"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Add existing wallet button -->
+        <Button
+            android:id="@+id/btnAddExistingWallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Existing Wallet" />
+
+        <!-- Secret Key Label -->
+        <TextView
+            android:id="@+id/tvSecretKeyLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Secret Key"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <!-- Secret Key Field -->
+        <EditText
+            android:id="@+id/etSecretKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:hint="xyzx"
+            android:padding="8dp" />
+
+        <!-- Secret Seed Label -->
+        <TextView
+            android:id="@+id/tvSecretSeedLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Secret Seed"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <!-- Secret Seed Field -->
+        <EditText
+            android:id="@+id/etSecretSeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:hint="r2sfr"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGenerateNewWallet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="Generate\nNew Wallet"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orangeDivider" />
+
+    <View
+        android:id="@+id/orangeDivider"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="12dp"
+        android:background="#CC6600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/existingWalletPanel" />
+
+    <!-- Generate new wallet button -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

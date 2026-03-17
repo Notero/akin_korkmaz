@@ -1,0 +1,138 @@
+/* About page specific styles */
+.about-main {
+  padding-bottom: 60px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* Let the shared .container actually have height to center within */
+.about-main .container {
+  min-height: auto !important;       
+  justify-content: flex-start !important; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding-top: 220px;
+}
+
+.main-logo {
+  font-size: 3rem;
+  color: #8be9fd;
+  text-align: center;
+  margin: 40px 0 20px 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.mission-section {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-selection h2 {
+  color: #8be9fd;
+  font-size: clamp(1.05rem, 1.0vw, 1.45rem);
+  text-align: center;
+}
+
+.mission-selection p {
+  color: #e6eef8;
+  font-size: clamp(0.85rem, 0.75vw, 1.05rem);
+  line-height: 1.5;
+  max-width: 90%;
+  text-align: center;
+}
+
+.about-card h2 {
+  color: #8be9fd;
+  font-size: clamp(1.5rem, 1.0vw, 2rem);
+  margin: 10px;
+  text-align: center;
+}
+
+.about-card p {
+  color: #e6eef8;
+  font-size: clamp(1rem, 0.75vw, 1.05rem);
+  line-height: 1.5;
+  max-width: 100%;
+  text-align: center;
+}
+
+.team-members {
+  text-align: center;
+}
+
+.team-members p {
+  margin: 0;
+  line-height: 1.5;
+}
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 15px 0;
+  background: rgba(15, 23, 42, 0.9);
+  border-top: 1px solid rgba(139, 233, 253, 0.2);
+}
+
+.about-card {
+    background: rgba(15, 23, 42, 0.85);
+    border: 2px solid rgba(139, 233, 253, 0.3);
+    border-radius: 16px;
+    padding: 20px 40px;
+    box-shadow: 0 0 40px rgba(139, 233, 253, 0.15);
+}
+
+.member-card p {
+  margin-left: 30px;
+  line-height: 1.5;
+  color: #e6eef8;
+}
+
+.member-card {
+    transition:
+      transform 0.2s ease,
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
+
+    background:
+    linear-gradient(
+      360deg,
+     rgba(29, 45, 59, 0.45),
+     rgba(38, 58, 75, 0.288)
+    ),
+    rgba(29, 42, 51, 0.55);
+
+    backdrop-filter: blur(0.5px);
+    border: 1px solid rgba(139, 233, 253, 0.3);
+    border-radius: 16px;
+    padding: 10px 40px;
+    box-shadow:
+      0 12px 30px rgba(0, 0, 0, 0.45),
+      0 0 25px rgba(120, 220, 255, 0.35);
+}
+
+.member-card:hover {
+  transform: translateY(-6px) scale(1.015);
+  border-color: rgba(140, 230, 255, 0.6);
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.45),
+    0 0 25px rgba(120, 220, 255, 0.35);
+}
+
+.member-card {
+  width: 100%;          /* same width for both cards */
+  max-width: 700px;    /* optional: keeps them from getting too wide */
+  margin: 0 auto;      /* extra safety for centering */
+  margin-bottom: 15px;
+}
+
+.about-card {
+  width: 100%;          /* same width for both cards */
+  max-width: 700px;    /* optional: keeps them from getting too wide */
+}

@@ -1,0 +1,45 @@
+# OS-specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build artifacts
+build/
+target/
+out/
+bin/
+obj/
+*.class
+*.exe
+*.o
+*.pyc
+*.out
+
+# Dependencies & Environments
+node_modules/
+.venv/
+env/
+venv/
+ENV/
+
+# IDE Settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*.iml
+*.iws
+*.ipr
+
+# Gradle
+.gradle/
+local.properties
+
+# Secrets
+.env
+.env.*
+!.env.example

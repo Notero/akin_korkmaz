@@ -1,0 +1,40 @@
+
+    // // 1. CryptoLand (CRYPTO) <-> XRP
+    // {
+    //     {"name", "CryptoLand"}, 
+    //     {"currency", "43525950544F0000000000000000000000000000"}, 
+    //     {"issuer", "rRbiKwcueo6MchUpMFDce9XpDwHhRLPFo"},
+    //     {"amm_account", "rLjUKpwUVmz3vCTmFkXungxwzdoyrWRsFG"} 
+    // },
+    
+    // // 2. Bitstamp USD <-> XRP
+    // {
+    //     {"name", "BitstampUSD"}, 
+    //     {"currency", "USD"}, 
+    //     {"issuer", "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"},
+    //     {"amm_account", "rHUpaqUPbwzKZdzQ8ZQCme18FrgW9pB4am"}
+    // },
+
+    // // 3. Gatehub USD <-> XRP
+    // {
+    //     {"name", "GatehubUSD"},  
+    //     {"currency", "USD"}, 
+    //     {"issuer", "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq"},
+    //     {"amm_account", "rs9ineLqrCzeAGS1bxsrW8x2n3bRJYAh3Q"}
+    // },
+
+    // // 4. Circle USDC <-> XRP
+    // {
+    //     {"name", "CircleUSDC"},  
+    //     {"currency", "5553444300000000000000000000000000000000"}, 
+    //     {"issuer", "rGm7WCVp9gb4jZHWTEtGUr4dd74z2XuWhE"},
+    //     {"amm_account", "rM7cHVPfhe9yxQNk2kDNBEQqoQmMcQGPWE"}
+    // },
+
+    // // 5. Gatehub USDC <-> XRP
+    // {
+    //     {"name", "GatehubUSDC"}, 
+    //     {"currency", "5553444300000000000000000000000000000000"}, 
+    //     {"issuer", "rcEGREd8NmkKRE8GE424sksyt1tJVFZwu"},
+    //     {"amm_account", "rGHt6LT5v9DVaEAmFzj5ciuxuj41ZjLofs"}
+    // }

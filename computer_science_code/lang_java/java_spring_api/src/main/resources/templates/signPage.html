@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form th:action="success" th:object="${form}" th:method="post">
+<label>
+    Name
+    <input type="text" th:field="*{firstname}">
+</label>
+    <label>
+        Lastname
+        <input type="text" th:field="*{lastname}">
+    </label>
+    <label>
+        Email
+        <input type="email" th:field="*{valencia_Mail}" pattern="^[a-zA-Z0-9]+@mail\.valenciacollege\.edu$" required>
+    </label>
+<label>
+    Courses
+    <select th:field="*{course}">
+        <option value="course1">course1</option>
+        <option value="course2">course2</option>
+        <option value="course3">course3</option>
+        <option value="course4">course4</option>
+    </select>
+</label>
+
+    <label>Submit <input type="submit"> </label>
+</form>
+
+</body>
+</html>

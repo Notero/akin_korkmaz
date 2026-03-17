@@ -4,19 +4,19 @@ This repository serves as a centralized archive of academic and independent deve
 
 ## Table of Contents
 
-Featured Projects
+- Featured Projects
 
-Technical Exercise Index: C Language
+- Technical Exercise Index: C Language
 
-Technical Exercise Index: Java Language
+- Technical Exercise Index: Java Language
 
-Compilation and Usage
+- Compilation and Usage
 
-Environment
+- Environment
 
-Skills Demonstrated
+- Skills Demonstrated
 
-Featured Projects (Multi-File Architectures)
+- Featured Projects (Multi-File Architectures)
 
 $$C$$
 

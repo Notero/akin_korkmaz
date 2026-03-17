@@ -50,115 +50,115 @@ Logic: A Model-View-Controller (MVC) application using Spring Boot and an H2 Dat
 
 Tech: Java, Spring Framework, Maven (pom.xml), Thymeleaf templates for the frontend, and Spring Data JPA for persistence.
 
-Technical Exercise Index: C Language (/lang_c)
+# Technical Exercise Index: C Language (/lang_c)
 
-1. Data Structures and Advanced Algorithms
+## 1. Data Structures and Advanced Algorithms
 
-binary_search_tree.c (BST): Implementation of insertion, deletion, and search algorithms in a sorted tree structure.
+- binary_search_tree.c (BST): Implementation of insertion, deletion, and search algorithms in a sorted tree structure.
 
-list_implementation.c (Linked Lists): Manual pointer manipulation for creating and traversing dynamic linear data structures.
+- list_implementation.c (Linked Lists): Manual pointer manipulation for creating and traversing dynamic linear data structures.
 
-queue_implementation.c (Queues): Implementing First-In-First-Out (FIFO) logic using both array-based and pointer-based approaches.
+- queue_implementation.c (Queues): Implementing First-In-First-Out (FIFO) logic using both array-based and pointer-based approaches.
 
-Tries.c (Prefix Trees): Specialized tree structure optimized for efficient string retrieval and prefix matching.
+- Tries.c (Prefix Trees): Specialized tree structure optimized for efficient string retrieval and prefix matching.
 
-flood_fill.c (Graph Algorithms): Implementing Breadth-First Search (BFS) for regional area processing and grid traversal.
+- flood_fill.c (Graph Algorithms): Implementing Breadth-First Search (BFS) for regional area processing and grid traversal.
 
-shortest_possible_string.c (Greedy/Strings): Solving the Shortest Common Superstring problem via overlap detection and string manipulation.
+- shortest_possible_string.c (Greedy/Strings): Solving the Shortest Common Superstring problem via overlap detection and string manipulation.
 
-2. Systems Programming and Resource Management
+## 2. Systems Programming and Resource Management
 
-joint_dynamic_memory.c (Memory): Deep dive into heap allocation, manual memory management, and pointer arithmetic to prevent leaks.
+- joint_dynamic_memory.c (Memory): Deep dive into heap allocation, manual memory management, and pointer arithmetic to prevent leaks.
 
-osystems_file.c (File Systems): Utilizing low-level system calls for file descriptor manipulation and persistent data storage.
+- osystems_file.c (File Systems): Utilizing low-level system calls for file descriptor manipulation and persistent data storage.
 
-resource_allocation.c (Deadlock): Algorithmic simulation of resource requests and implementation of deadlock avoidance strategies.
+- resource_allocation.c (Deadlock): Algorithmic simulation of resource requests and implementation of deadlock avoidance strategies.
 
-sorted_array_resource_allocation.c (Resource Mgmt): Managing available system resources efficiently within sorted data constraints.
+- sorted_array_resource_allocation.c (Resource Mgmt): Managing available system resources efficiently within sorted data constraints.
 
-file_system_project.c (Storage): High-level simulation of file storage, directory structures, and metadata management.
+- file_system_project.c (Storage): High-level simulation of file storage, directory structures, and metadata management.
 
-alu_insfetch.c (Hardware Logic): Simulation of the fundamental CPU cycles: Arithmetic Logic Unit operations and Instruction Fetch.
+- alu_insfetch.c (Hardware Logic): Simulation of the fundamental CPU cycles: Arithmetic Logic Unit operations and Instruction Fetch.
 
-3. Application Logic and Utilities
+## 3. Application Logic and Utilities
 
-battle_ships_terminal_game.c (Game Logic): Complex state management and 2D array manipulation within a CLI environment.
+- battle_ships_terminal_game.c (Game Logic): Complex state management and 2D array manipulation within a CLI environment.
 
-common_search_sort_functions.c (Sorting): Comparative implementation of standard search (Linear/Binary) and sort (Bubble/Quick) algorithms.
+- common_search_sort_functions.c (Sorting): Comparative implementation of standard search (Linear/Binary) and sort (Bubble/Quick) algorithms.
 
-math_library_logic.c (Computation): Recreating standard mathematical library functions to understand algorithmic complexity.
+- math_library_logic.c (Computation): Recreating standard mathematical library functions to understand algorithmic complexity.
 
-word_frequency_string.java (Text Processing): Tokenizing strings to analyze frequency (housed in C directory for cross-language comparison).
+- word_frequency_string.java (Text Processing): Tokenizing strings to analyze frequency (housed in C directory for cross-language comparison).
 
-reciperion.c / .h (Modularization): Practicing header file separation, interface-based programming, and modular C design.
+- reciperion.c / .h (Modularization): Practicing header file separation, interface-based programming, and modular C design.
 
-djauto.c (Automation): Script-like C implementation designed for automated task logic and execution.
+- djauto.c : automobile management system.
 
-vase_project.c (Geometry/Logic): Utilizing programming to solve specific spatial, geometric, or mathematical problems.
+- vase_project.c (Geometry/Logic): Utilizing programming to solve specific spatial, geometric, or mathematical problems.
 
-4. Language Fundamentals and Syntax
+## 4. Language Fundamentals and Syntax
 
-Basics: basics_and_variables.c, input_and_arithmetic.c, menu_functions.c, review.c.
+- Basics: basics_and_variables.c, input_and_arithmetic.c, menu_functions.c, review.c.
 
-Control Flow: nested_conditionals.c, functions_and_switch.c, loop_patterns_modulo.c, while_loop_counters.c, sentinel_loop_logic.c.
+- Control Flow: nested_conditionals.c, functions_and_switch.c, loop_patterns_modulo.c, while_loop_counters.c, sentinel_loop_logic.c.
 
-Data Handling: 2d_array.c, structs.c, structs_and_arrays.c, strings.c, substring_extraction.c.
+- Data Handling: 2d_array.c, structs.c, structs_and_arrays.c, strings.c, substring_extraction.c.
 
-Technical Exercise Index: Java Language (/lang_java)
+# - Technical Exercise Index: Java Language (/lang_java)
 
-1. Algorithms and Optimization
+##1. Algorithms and Optimization
 
-backtrack.java (Recursion): Navigating state-space trees to find solutions via backtracking and pruning.
+- backtrack.java (Recursion): Navigating state-space trees to find solutions via backtracking and pruning.
+ 
+- dynamic_programming.java (DP): Optimizing recursive solutions using memoization to reduce time complexity.
 
-dynamic_programming.java (DP): Optimizing recursive solutions using memoization to reduce time complexity.
+- dynamic_programming_2.java (DP): Advanced table-based (bottom-up) optimization strategies for complex problems.
 
-dynamic_programming_2.java (DP): Advanced table-based (bottom-up) optimization strategies for complex problems.
+- greedy_algorithms.java (Optimization): Implementing locally optimal choices to solve global optimization problems.
 
-greedy_algorithms.java (Optimization): Implementing locally optimal choices to solve global optimization problems.
+- kruskals_algorithm.java (Graphs): Finding the Minimum Spanning Tree (MST) using Disjoint Set Union (DSU).
 
-kruskals_algorithm.java (Graphs): Finding the Minimum Spanning Tree (MST) using Disjoint Set Union (DSU).
+## 2. Object-Oriented Design and Systems
 
-2. Object-Oriented Design and Systems
+- threads (Race.java, etc.) (Concurrency): Managing Hare/Tortoise threads and synchronizing shared states to prevent race conditions.
 
-threads (Race.java, etc.) (Concurrency): Managing Hare/Tortoise threads and synchronizing shared states to prevent race conditions.
+- gui-web (UI Architecture): Designing component-based web interfaces and handling user interaction events.
 
-gui-web (UI Architecture): Designing component-based web interfaces and handling user interaction events.
+- junit_testing (QA/Testing): Writing robust unit tests to ensure code reliability and validate edge-case handling.
 
-junit_testing (QA/Testing): Writing robust unit tests to ensure code reliability and validate edge-case handling.
+- input_output_streams.java (I/O): Managing data flow between applications and external files using Java IO/NIO.
 
-input_output_streams.java (I/O): Managing data flow between applications and external files using Java IO/NIO.
+## 3. Data Collections and Project Modules
 
-3. Data Collections and Project Modules
+- Unique Pairs: unique_pairs.java & test_cases (HashMap-based relationship mapping and student pair counting).
 
-Unique Pairs: unique_pairs.java & test_cases (HashMap-based relationship mapping and student pair counting).
+- Map/Address Book: AddressBook.java, Address.java, AddressBookController.java (MVC-lite approach to data management).
 
-Map/Address Book: AddressBook.java, Address.java, AddressBookController.java (MVC-lite approach to data management).
+- Stack Logic: Card.java, FacedCard.java, RandomStackof8.java (LIFO data structure applications).
 
-Stack Logic: Card.java, FacedCard.java, RandomStackof8.java (LIFO data structure applications).
-
-Queue Logic: Person.java, TicketQueue.java (ArrayList-based FIFO queueing simulation).
+- Queue Logic: Person.java, TicketQueue.java (ArrayList-based FIFO queueing simulation).
 
 Compilation and Usage
 
-For Individual Files
+## For Individual Files
 
 All code is developed and tested on a 14-inch MacBook Pro (Apple M3 Pro, 18GB Unified Memory).
 
-C Files:
+### C Files:
 
 clang -Wall file_name.c -o program
 ./program
 
 
 
-Java Files:
+### Java Files:
 
 javac FileName.java
 java FileName
 
 
 
-For Projects
+## For Projects
 
 Makefile Projects: Navigate to the folder and run make.
 

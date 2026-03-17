@@ -1,8 +1,8 @@
-Computer Science Codebase: Comprehensive Syllabus
+# Computer Science Codebase: Comprehensive Syllabus
 
 This repository serves as a centralized archive of academic and independent development in Computer Science. It spans from low-level systems programming in C to high-level application architecture and API development in Java, documenting a progression through fundamental computer science pillars.
 
-Table of Contents
+## Table of Contents
 
 Featured Projects
 

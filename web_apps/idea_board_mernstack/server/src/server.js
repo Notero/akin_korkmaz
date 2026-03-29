@@ -37,7 +37,7 @@ app.use(cookieParser()); // Middleware to parse cookies from incoming requests
 
 //Json middleware to parse incoming JSON requests
 app.use(express.json());
-app.use(rateLimiter); // Apply rate limiter middleware to all routes
+//app.use(rateLimiter); // Apply rate limiter middleware to all routes
 
 app.use("/admin-token", adminTokenRouter);
 app.use("/api/board", boardRouter);

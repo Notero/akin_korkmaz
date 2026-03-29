@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import LoginCard from '../components/LoginCard';
 import { useNavigate } from 'react-router';
 import api from '../api/utils/axios';
+import toast from 'react-hot-toast';
 
-// 1. Import the relative path correctly
-import bgImage from '../../bgimage.png'; 
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -13,32 +12,27 @@ const LoginPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle login logic here (e.g., API call to authenticate user)
-    console.log('Email:', email);
-    console.log('Password:', password);
-      try {
-        //API CALL TO LOGIN USER
-        const response = await api.post('/user/login', { email: email, password: password });
+    try {
+      const response = await api.post('/user/login', { email, password });
 
-        if (response.status === 200) {
-          console.log('Login successful:', response.data);
-          // You can redirect the user to the home page or dashboard here
-          navigate('/');
-        } else {
-          console.error('Login failed with status:', response.status);
-        }
-    }catch (error) {
-      console.error('Login failed:', error);
+      if (response.status === 200) {
+        toast.success('Login successful!');
+        navigate('/dashboard');
       }
-};
+    } catch (error) {
+      if (error.response) {
+        toast.error(error.response.data.message || 'Login failed');
+      } else {
+        toast.error('Network error or server is down');
+      }
+      console.error('Login failed:', error);
+    }
+  };
 
   return (
     /* 2. Use DaisyUI 'hero' to handle the centering and background */
     <div 
-      className="hero min-h-screen" 
-      style={{ 
-        backgroundImage: `url(${bgImage})`,
-      }}
+      className="hero min-h-screen"
     >
       {/* 3. This overlay ensures your LoginCard is readable over the PNG */}
       <div className="hero-overlay bg-opacity-40 backdrop-blur-sm"></div>

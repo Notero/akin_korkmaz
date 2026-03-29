@@ -1,5 +1,4 @@
 import { PlusIcon } from 'lucide-react'
-import { Link } from 'react-router'
 
 const Navbar = () => {
     return (
@@ -30,10 +29,8 @@ const Navbar = () => {
                     <a className="btn btn-ghost text-xl">Idea Board</a>
                 </div>
                 <div className="flex-none">
-                    <button className="btn btn-square btn-ghost">
-                        <Link to="/create">
-                            <PlusIcon className="size-5" />
-                        </Link>
+                    <button className="btn btn-square btn-ghost" onClick={() => document.getElementById('board_modal').showModal()}>
+                        <PlusIcon className="size-5" />
                     </button>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react'
+import { useNavigate } from 'react-router'
 import Navbar from '../components/Navbar'
-import Drawer from '../components/Drawer'
+import BoardModal from '../components/BoardForm'
 import RateLimitedUI from '../components/RateLimitedUI'
 import api from '../api/utils/axios'
 
@@ -9,6 +10,7 @@ const HomePage = () => {
   const [isRateLimited, setIsRateLimited] = React.useState(false);
   const [board, setBoard] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
+  const navigate = useNavigate();
 
   React.useEffect(() => {
         const fetchBoards = async () => {
@@ -29,6 +31,10 @@ const HomePage = () => {
         };
         fetchBoards();
     }, [])
+
+    const getBoardDetails = (_id) => {
+        navigate(`/board/${_id}`); // This sends the user to a dynamic URL
+    }
     
     return (
     <div className='min-h-screen'>
@@ -38,14 +44,14 @@ const HomePage = () => {
             {loading && <div className="text-center text-secondary">Loading boards...</div>}
             {!loading && board.length === 0 && <div className="text-center text-secondary">No boards found.</div>}
             {board.length > 0 && !isRateLimited && (
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-6">
                     {board.map((board) => (
-                        <div key={board._id} className="card bg-base-100 shadow-md">
+                        <div key={board._id} className="card bg-base-300 shadow-md break-inside-avoid mb-6">
                             <div className="card-body">
-                                <h2 className="card-title">{board.title}</h2>
-                                <p>{board.description}</p>
+                                <h2 className="card-title text-primary">{board.name}</h2>
+                                <p className="text-secondary">{board.description}</p>
                                 <div className="card-actions justify-end">
-                                    <button className="btn btn-primary">View Details</button>
+                                    <button className="btn btn-accentt" onClick={() => getBoardDetails(board._id)}>View Details</button>
                                 </div>
                             </div>
                         </div>
@@ -53,6 +59,7 @@ const HomePage = () => {
                 </div>
             )}
         </div>
+        <BoardModal />
     </div>
   ) 
 }

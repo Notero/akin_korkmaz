@@ -25,6 +25,7 @@ dotenv.config({
 const app = express();
 const PORT = process.env.PORT || 8001;
 
+//Change CORS to not be localhost on production
 const corsOptions = {
     origin: 'http://localhost:5173',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],

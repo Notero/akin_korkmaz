@@ -1,0 +1,13 @@
+{
+  "name": "idea_board_mernstack",
+  "version": "1.0.0",
+  "description": "A collaborative brainstorming platform built with the modern MERN stack (MongoDB, Express, React, and Node.js).",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix server && npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
